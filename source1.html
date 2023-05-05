@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hackathon 2023</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Roboto+Mono:ital|Bruno+Ace+SC|Foldit:wght@200|Black+Ops+One|Rajdhani&display=swap">
+        <script src="function.js"></script> 
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#schedule" onclick="scrollToSchedule()">Schedule</a>
+                        <script>
+                            function scrollToSchedule() {
+                              var scheduleSection = document.querySelector('.schedule');
+                              scheduleSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            </script></li>
+                    <li><a href="#info" onclick="scrollToInfo()">Information</a>
+                        <script>
+                            function scrollToInfo() {
+                              var infoSection = document.querySelector('.info');
+                              infoSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            </script></li>
+                    <li><a href="#speakers" onclick="scrollToSpeakers()">Speakers</a>
+                        <script>
+                            function scrollToSpeakers() {
+                              var speakerSection = document.querySelector('.speakers');
+                              speakerSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            </script></li>
+                    <li><a href="#sponsors" onclick="scrollToSponsors()">Sponsors</a>
+                        <script>
+                        function scrollToSponsors() {
+                          var sponsorsSection = document.querySelector('.sponsors');
+                          sponsorsSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                        </script></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="top">
+                <div class="top-content"><img src="DSC.png" height="300px" width="auto">
+                    <h2>PRESENTS</h2>
+                    <h1>DATA DIVE</h1>
+                <p>Join us for a weekend of Coding, Learning and Fun, sponsored by <a href="https://github.com/">GITHUB</a></p>
+                <a href="" class="button">REGISTER NOW</a></div>
+            </section>
+            <section class="schedule">
+                <h2>Event Schedule</h2>
+                <ul>
+                <li>
+                    <h3>Friday, May 5th</h3>
+                    <p>6:00 PM - Doors open and registration</p>
+                    <p>7:00 PM - Welcome and opening remarks</p>
+                    <p>8:00 PM - Team formation and coding begins</p>
+                </li>
+                <li>
+                    <h3>Saturday, May 6th</h3>
+                    <p>9:00 AM - Breakfast and coding continues</p>
+                    <p>12:00 PM - Lunch</p>
+                    <p>1:00 PM - Workshops and talks</p>
+                    <p>6:00 PM - Dinner and coding continues</p>
+                </li>
+                <li>
+                    <h3>Sunday, May 7th</h3>
+                    <p>9:00 AM - Breakfast and coding continues</p>
+                    <p>12:00 PM - Lunch</p>
+                    <p>1:00 PM - Demos and judging</p>
+                    <p>4:00 PM - Closing remarks and prizes</p>
+                </li>
+                </ul>
+            </section>
+            <section class="info">
+                <h2>Information</h2>
+                <p>You must have atleast 4 Team Members.</p>
+            </section>
+            <section class="speakers">
+                <h2>Speakers</h2>
+                <ul>
+                <li>
+                    <img src="speaker_logo.png" alt="Speaker 1">
+                    <h3>John Doe</h3>
+                    <p><b>Topic:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor augue elit, 
+                        vulputate gravida mauris posuere sit amet. Praesent blandit, justo vel egestas eleifend, 
+                        nulla orci efficitur tortor, eget pharetra est risus vitae felis. Pellentesque tristique 
+                        tincidunt euismod. Vivamus varius sapien leo, in tincidunt arcu blandit semper. </p>
+                </li>
+                <li>
+                    <img src="speaker_logo.png" alt="Speaker 2">
+                    <h3>Jane Doe</h3>
+                    <p><b>Topic:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor augue elit, 
+                        vulputate gravida mauris posuere sit amet. Praesent blandit, justo vel egestas eleifend, 
+                        nulla orci efficitur tortor, eget pharetra est risus vitae felis. Pellentesque tristique 
+                        tincidunt euismod. Vivamus varius sapien leo, in tincidunt arcu blandit semper. </p>
+                </li>
+                <li>
+                    <img src="speaker_logo.png" alt="Speaker 3" >
+                    <h3>Jane Doe</h3>
+                    <p><b>Topic:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor augue elit, 
+                        vulputate gravida mauris posuere sit amet. Praesent blandit, justo vel egestas eleifend, 
+                        nulla orci efficitur tortor, eget pharetra est risus vitae felis. Pellentesque tristique 
+                        tincidunt euismod. Vivamus varius sapien leo, in tincidunt arcu blandit semper. </p>
+                </li>
+                </ul>
+            </section>
+            <section class="sponsors">
+                <h2>Sponsors</h2>
+                <ul>
+                  <li><img src="GitHub_Logo.svg" alt="Sponsor 1"></li>
+                  <li><img src="VIT_Logo.png" alt="Sponsor 2"></li>
+                </ul>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+        </main>
+    </body>
+</html>
